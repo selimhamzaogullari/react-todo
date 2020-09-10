@@ -1,0 +1,180 @@
+.links-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .links-content {
+    width: 400px;
+    .box {
+      background-color: $gray-normal;
+      border: 1px solid $gray-dark;
+      font-size: 30px;
+      font-weight: 700;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+      border-radius: 5px;
+      .plus-icon {
+        font-size: 50px;
+      }
+      .point-text {
+        font-size: 11px;
+        font-weight: 400;
+        margin-top: -10px;
+      }
+    }
+    .submit-link {
+      width: 400px;
+      padding: 20px;
+      background-color: $gray-light;
+      border: 1px solid $gray-normal;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .submit-link-title {
+        font-weight: bold;
+        font-size: 23px;
+        letter-spacing: 1px;
+      }
+    }
+    hr {
+      width: 400px;
+      margin-top: 10px;
+      border-top: 2px solid $gray-normal;
+    }
+    .dropdown {
+      button {
+        border: 1px solid #c8c8c8;
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    .links-list {
+      display: flex;
+      position: relative;
+      padding: 5px;
+      &:first-child {
+        margin-top: 30px;
+      }
+      margin-top: 15px;
+      .links-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+          font-size: 17px;
+          font-weight: bold;
+        }
+        .href {
+          font-size: 13px;
+        }
+        .up-vote, .down-vote {
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+          font-size: 12px;
+          cursor: pointer;
+          ion-icon {
+            font-size: 15px;
+            margin-right: 2px;
+          }
+        }
+      }
+      .remove-list-icon {
+        display: none;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #c93a37;
+        color: #fff;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        font-size: 21px;
+        cursor: pointer;
+      }
+      &:hover {
+        background-color: $gray-light;
+        .remove-list-icon {
+          display: flex;
+        }
+      }
+    }
+  }
+  #dropdownMenuButton + .dropdown-menu{
+    padding: 0;
+    margin-top: 0;
+    border-top: none;
+
+  }
+  .modal {
+    .modal-header {
+      background-color: #353535;
+      color: #ffffff;
+      button.close {
+        color: #ffffff;
+        text-shadow: none;
+        opacity: 1;
+      }
+    }
+    .modal-body{
+      .link-desc {
+        font-size: 18px;
+      }
+      .link-name {
+        font-size: 22px;
+        font-weight: bold;
+      }
+    }
+    .modal-footer {
+      border: none;
+      display: flex;
+      justify-content: center;
+      button {
+        margin: 0 15px;
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+// Add link
+.add-link-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .links-content {
+    width: 250px;
+    input {
+      max-width: 250px;
+    }
+    a {
+      color: $font-color;
+      ion-icon {
+        margin-top: 2px;
+        margin-right: 2px;
+      }
+    }
+    small {
+      margin-top: 5px;
+      color: #ff4a37;
+    }
+    button.btn-add-link {
+      &:hover {
+        color: #ffffff;
+      }
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+  }
+}

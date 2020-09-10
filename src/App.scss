@@ -1,0 +1,42 @@
+$gray-light: #eaeaea;
+$gray-normal: #d6d6d6;
+$gray-dark: #c8c8c8;
+$font-color: #404040;
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import '~bootstrap/scss/bootstrap.scss';
+@import './assets/styles/links';
+@import './assets/styles/pagination';
+
+$font-family: 'Kumbh Sans', sans-serif;
+
+body {
+  font-family: $font-family;
+  font-size: 14px;
+  padding: 20px 0;
+  color: $font-color;
+  ion-icon {
+    color: $font-color;
+  }
+  a {
+    color: $font-color;
+  }
+  button.main-btn {
+    background-color: $font-color;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 10px;
+  }
+  #removeLinkToast, #addLinkToast {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 22px;
+    background-color: #4fc959;
+    transition: all .25s ease-in-out;
+    .toast-header {
+      color: #2cc93b;
+      border-bottom: none;
+    }
+  }
+}

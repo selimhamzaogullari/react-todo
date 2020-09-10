@@ -1,0 +1,17 @@
+ul.pagination {
+  .page-item {
+    margin:  0 2px;
+    .page-link {
+      color: $font-color;
+      background-color: #ffffff;
+      border-color: #ffffff;
+      font-weight: bold;
+      &.active {
+        border-color: $font-color;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
